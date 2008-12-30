@@ -1,0 +1,37 @@
+<h1>Editing contact</h1>
+
+<%= error_messages_for :contact %>
+
+<% form_for(@contact) do |f| %>
+  <p>
+    <b>First</b><br />
+    <%= f.text_field :first %>
+  </p>
+
+  <p>
+    <b>Last</b><br />
+    <%= f.text_field :last %>
+  </p>
+
+  <p>
+    <b>Company</b><br />
+    <%= f.text_field :company %>
+  </p>
+
+  <p>
+    <b>Email</b><br />
+    <%= f.text_field :email %>
+  </p>
+
+  <p>
+    <b>Time</b><br />
+    <%= f.datetime_select :time %>
+  </p>
+
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @contact %> |
+<%= link_to 'Back', contacts_path %>

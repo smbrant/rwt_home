@@ -1,0 +1,81 @@
+== Basic Rwt Application
+
+This is a basic Rwt Application to serve as a starting point or as an example
+of how to include Rwt in an existing Rails application.
+
+The following script should be followed to adapt an application to Rwt:
+
+- Install the rwt_plugin (see http:// OR
+    - copy (or link) the rwt/lib directory to the app/lib directory
+    - copy (or link) the ExtJs library to the public/ext directory
+
+- If you are not using the plugin, include the Rwt module in the application
+  controller (/app/controllers/applicationl.rb):
+
+    require 'rwt'  # <<--
+    class ApplicationController < ActionController::Base
+      include Rwt  # <<--
+      helper :all
+      protect_from_forgery
+    end
+
+- Create a controller to act as the main entry to the rwt application:
+  (/app/controller/desktop_controller.rb):
+
+    class DesktopController < ApplicationController
+      def index
+        respond_to do |format|
+          format.html
+          format.js {rwt_template}
+        end
+      end
+    end
+
+- Create the views associated with the desktop_controller 
+  (/app/views/desktop/index.html.erb):
+
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+    <html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <title>Basic Rwt Application</title>
+
+    <!-- The ExtJs library -->
+    <link rel="stylesheet" type="text/css" href="/ext/resources/css/ext-all.css" />
+    <script type="text/javascript" src="/ext/adapter/ext/ext-base.js"></script>
+    <script type="text/javascript" src="/ext/ext-all.js"></script>
+
+
+    <!-- Rwt application entry template -->
+    <script src="/desktop/index.js" type="text/javascript"></script>
+
+    </head>
+    <body>
+    </body>
+    </html>
+
+  (/app/views/desktop/index.rb):
+
+    rwt_app do |app|
+      app << toolbar do |tb|
+        tb << menu('Test') do |m|
+          m << menu_item('Basic CRUD',call_view('/crud/index'))
+          m << menu_item('Other tests',Rwt.message('Other tests','To include other tests, alter the menu in /app/views/desktop/index.rb'))
+        end
+      end
+    end
+
+- Alter routes.rb redirecting the main entry of your application:
+  (/config/routes.rb):
+
+    ActionController::Routing::Routes.draw do |map|
+      map.root :controller => "desktop", :action=>'index'
+
+      map.connect ':controller/:action/:id'
+      map.connect ':controller/:action.:format'   # <<-- INCLUDE THIS ROUTE TOO!
+      map.connect ':controller/:action/:id.:format'
+    end
+
+- Delete the index.html file in the /public directory and run the application 
+  (you should see a menu at the top of your page).
+

@@ -1,0 +1,49 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+    <title></title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+<!--
+.style1 {font-weight: bold}
+-->
+    </style>
+</head>
+<body>
+
+
+<table width="100%"  border="0">
+  <tr>
+    <td height="70">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="16%" align="center" valign="bottom"><a href="javascript:show_html('/getting_started1.html')">Previous</a></td>
+    <td width="71%"><p><big class="style1"><big>Getting started with Rwt</big></big><br>
+    </p>
+      <p>&nbsp;        </p>
+      <p>Now that our main menu is created, lets take care of our first window. Create a controller, let's say the test_controller.rb, with the following code: <br>
+      </p>
+      <p>&nbsp;      </p>
+      <pre>class TestController &lt; ApplicationController<br>  def first<br>    rwt_render<br>  end<br>end<br>
+      </pre>
+And a file called 'first.rb' in the app/views/test directory with the code of a simple window: <br>
+<pre>window('My first rwt window',300,200) do<br>  button('It seems to be easy') do |b|<br>    b.on_click {show_view('/test/first')}<br>  end<br>end<br>
+</pre>
+
+And this ends our first test. You can have access to many other tests in the 'explore' menu.
+
+</td>
+    <td width="13%" align="center" valign="bottom">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+</body></html>

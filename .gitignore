@@ -1,0 +1,5 @@
+log
+nbproject
+*.zip
+vendor
+public/ext

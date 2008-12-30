@@ -1,0 +1,1 @@
+Ext.getCmp('ide').hide()
