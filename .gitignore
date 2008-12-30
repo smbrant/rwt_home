@@ -1,5 +1,6 @@
-log
 nbproject
+lib
+public/ext
 *.zip
 vendor
-public/ext
+log
