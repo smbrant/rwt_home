@@ -11,7 +11,7 @@ var simple = new Ext.FormPanel({
     defaults: {width: 230},
     defaultType: 'textfield',
     width:'auto',
-    baseParams:{authenticity_token:"'<%=form_authenticity_token%>'"},
+    baseParams:{authenticity_token:"<%=form_authenticity_token%>"},
     items: [{
             fieldLabel: 'First Name',
             name: 'contact[first]',

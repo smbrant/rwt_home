@@ -4,8 +4,9 @@ class TestController < ApplicationController
   def inline_test
     rwt_render :inline=>"window('inline test',200,200) do\n"+
                           "button('test') do |b|\n"+
-                            "b.on_click do\n"+
-                              "Rwt << 'alert(\"button clicked\")'\n"+
+                            "b.on('click') do\n"+
+#                              "Rwt << 'alert(\"button clicked\")'\n"+
+                              "Rwt << 'Rwt.message(\"Message\",\"button clicked\")'\n"+
                             "end\n"+
                           "end\n"+
                         "end\n"+

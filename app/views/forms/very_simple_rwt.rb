@@ -13,10 +13,10 @@ window('Simple Form - Rwt code',360,210) do |w|
     field('Email',  'contact[email]', :vtype=>'email')
     field('Time', 'contact[time]', :minValue=> '8:00am', :maxValue=> '6:00pm', :xtype=>'timefield')
     f.buttons=[
-      button('Save',:tooltip=>'Save data'){|b| b.on_click {f.submit}},
-      button('Cancel',:tooltip=>'Cancel') {|b| b.on_click {w.close}},
+      button('Save',:tooltip=>'Save data'){|b| b.on('click') {f.submit}},
+      button('Cancel',:tooltip=>'Cancel') {|b| b.on('click') {w.close}},
       button('Scaffold',:tooltip=> 'See data with a traditional Rails scaffold') do |b|
-        b.on_click {Rwt << "window.open('/contacts');"}
+        b.on('click') {Rwt << "window.open('/contacts');"}
       end
     ]
   end

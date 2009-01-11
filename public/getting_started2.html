@@ -31,10 +31,11 @@ and open the template in the editor.
       <pre>class TestController &lt; ApplicationController<br>  def first<br>    rwt_render<br>  end<br>end<br>
       </pre>
 and a file called 'first.rb' in the app/views/test directory with the code of a simple window: <br><br>
-<pre>window('My first rwt window',300,200) do<br>  button('It seems to be easy') do |b|<br>    b.on_click {show_view('/test/first')}<br>  end<br>end<br>
+<pre>window('My first rwt window',300,200) do<br>  button('It seems to be easy') do |b|<br>    b.on('click') {show_view('/test/first')}<br>  end<br>end<br>
 </pre>
 
-This ends our first test. Try it with the 'Tests/First window' menu. You can have access to many other examples in the 'Rwt/Explore' menu.
+This ends our first test. Try it with the 'Tests/First window' menu. You can have access to many other examples in the 'Rwt/Explore' menu.<br><br>
+The source code of Rwt is kept in <a href="http://github.com/smbrant/rwt" target="blank">http://github.com/smbrant/rwt</a>.
 
 </td>
     <td width="13%" align="center" valign="bottom">&nbsp;</td>
