@@ -7,11 +7,11 @@ window('Simple Form - Rwt code',360,210) do |w|
        :labelWidth=> 75,
        :defaults=> {:width=> 230}
   ) do |f|
-    field('First Name','contact[first]', :allowBlank=> false)
-    field('Last Name', 'contact[last]')
-    field('Company', 'contact[company]')
-    field('Email',  'contact[email]', :vtype=>'email')
-    field('Time', 'contact[time]', :minValue=> '8:00am', :maxValue=> '6:00pm', :xtype=>'timefield')
+    field('contact[first]','First Name',:allowBlank=> false)
+    field('contact[last]','Last Name')
+    field('contact[company]','Company')
+    field('contact[email]','Email',:vtype=>'email')
+    field('contact[time]','Time',:minValue=> '8:00am', :maxValue=> '6:00pm', :xtype=>'timefield')
     f.buttons=[
       button('Save',:tooltip=>'Save data'){|b| b.on('click') {f.submit}},
       button('Cancel',:tooltip=>'Cancel') {|b| b.on('click') {w.close}},

@@ -16,4 +16,10 @@ class DesktopController < ApplicationController
   def util
     rwt_render
   end
+
+  def language
+    #TODO: change the language used
+    puts params[:id]
+    rwt_ok
+  end
 end

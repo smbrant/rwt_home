@@ -4,16 +4,16 @@
 window('Simple Form with FieldSets - rwt',360,410,:x=>80,:y=>80) do
   form(:url=>'save-form.php',:labelWidth=>75,:frame=>true,:bodyStyle=>'padding:5px 5px 0') do
     fieldset('User Information',:checkboxToggle=>true,:autoHeight=>true,:defaults=>{:width=>210},:collapsed=>true) do
-      field('First Name','first',:allowBlank=>false)
-      field('Last Name','last')
-      field('Company','company')
-      field('Email','email',:vtype=>'email')
+      field('first','First Name',:allowBlank=>false)
+      field('last','Last Name')
+      field('company') # fieldLabel defaults to 'Company'
+      field('email',:vtype=>'email')
     end
     fieldset('Phone Number',:collapsible=>true,:autoHeight=>true, :defaults=>{:width=>210}) do
-      field('Home','home',:value=>'(888) 555-1212')
-      field('Business','business')
-      field('Mobile','mobile')
-      field('Fax','fax')
+      field('home','Home',:value=>'(888) 555-1212')
+      field('business','Business')
+      field('mobile','Mobile')
+      field('fax','Fax')
     end
   end
 end
