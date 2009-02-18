@@ -3,15 +3,15 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
 
   # Helper to show code from this rails application
-  def show_code(code)
+  def show_code(source)
     if session[:ide_activated]
-      title= code.split('/').last
+      title= source.split('/').last
       Rwt << "a=Ext.getCmp('ide');"
       Rwt << "n=a.items.length;"
       Rwt << "rs=a.items;"
       Rwt << "found=false;"
       Rwt << "for(i=0;i<n;++i) {if(rs.items[i].title=='#{title}'){found=true}};"
-      Rwt << "if(!found){Ext.getCmp('ide').add({title:'#{title}',closable:true,autoLoad:{url:'/code/show/#{code}'}}).show();}"
+      Rwt << "if(!found){Ext.getCmp('ide').add({title:'#{title}',closable:true,autoLoad:{url:'/code/show/#{source}'}}).show();}"
     end
   end
 

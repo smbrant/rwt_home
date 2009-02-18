@@ -11,13 +11,19 @@ rwt_app do
       menu_item('Inline code',call_view("/test/inline_test"))
     end
     menu('Forms') do
-      menu('Very Simple') do
-        menu_item('extjs',call_view('/forms/very_simple_extjs'))
-        menu_item('rwt',call_view('/forms/very_simple_rwt'))
-      end
-      menu('Adding fieldsets') do
-        menu_item('extjs',call_view('/forms/with_fieldsets_extjs'))
-        menu_item('rwt',call_view('/forms/with_fieldsets_rwt'))
+      menu('Dynamic Forms') do
+        menu('Form 1 - Very Simple') do
+          menu_item('extjs',call_view('/forms/form1_extjs'))
+          menu_item('rwt',call_view('/forms/form1_rwt'))
+        end
+        menu('Form 2 - Adding fieldsets') do
+          menu_item('extjs',call_view('/forms/form2_extjs'))
+          menu_item('rwt',call_view('/forms/form2_rwt'))
+        end
+        menu('Form 3 - A little more complex') do
+          menu_item('extjs',call_view('/forms/form3_extjs'))
+          menu_item('rwt',call_view('/forms/form3_rwt'))
+        end
       end
     end
 
