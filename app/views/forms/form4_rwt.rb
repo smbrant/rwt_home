@@ -1,5 +1,5 @@
 #
-# Example coded in ruby, using the rwt library
+# Example coded in ruby, using the rwt library -
 #
 window('Forms can be a TabPanel... - rwt',360,230,:x=>80,:y=>80) do
   form(:labelWidth=>75,:border=>false,:width=>350) do |f|
