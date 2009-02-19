@@ -16,7 +16,6 @@ var tabs = new Ext.FormPanel({
             layout:'form',
             defaults: {width: 230},
             defaultType: 'textfield',
-
             items: [{
                 fieldLabel: 'First Name',
                 name: 'first',
