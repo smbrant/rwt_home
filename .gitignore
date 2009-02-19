@@ -4,3 +4,6 @@ public/ext
 *.zip
 vendor
 log
+bck.rb
+bckw.rb
+*.*~
