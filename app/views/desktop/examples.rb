@@ -24,6 +24,10 @@ rwt_app do
           menu_item('extjs',call_view('/forms/form3_extjs'))
           menu_item('rwt',call_view('/forms/form3_rwt'))
         end
+        menu('Form 4 - Forms can be a TabPanel...') do
+          menu_item('extjs',call_view('/forms/form4_extjs'))
+          menu_item('rwt',call_view('/forms/form4_rwt'))
+        end
       end
     end
 
