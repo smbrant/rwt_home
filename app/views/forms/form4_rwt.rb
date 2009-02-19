@@ -3,7 +3,7 @@
 #
 window('Forms can be a TabPanel... - rwt',360,230,:x=>80,:y=>80) do
   form(:labelWidth=>75,:border=>false,:width=>350) do |f|
-    tabpanel(:activeTab=>0,:defaults=>{:autoHeight=>true, :bodyStyle=>'padding:10px'}) do
+    tabpanel(:activeTab=>0,:defaults=>{:autoHeight=>true, :bodyStyle=>'padding:10px'},:border=>false) do
       panel(:title=>'Personal Details',:layout=>'form',:defaults=>{:width=>200}) do
         field('first','First Name',:allowBlank=>false,:value=>'Jack')
         field('last','Last Name',:value=>'Slocum')
