@@ -1,4 +1,4 @@
-window('Contacts',350,350) do
+window('Contacts',500,350) do
   dbgrid(Contact,ContactsRwtController,form_authenticity_token) do
     field('first')
     field('last')

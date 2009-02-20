@@ -1,4 +1,4 @@
-window('New Contact',500,250) do
+window('Edit Contact',500,250) do
   editform(@contact,ContactsRwtController,form_authenticity_token,:id=>params[:id]) do
     field('first')
     field('last')
