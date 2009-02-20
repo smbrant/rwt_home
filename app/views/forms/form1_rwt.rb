@@ -15,8 +15,11 @@ window('Simple Form - Rwt code',360,210) do |w|
     f.buttons=[
       button('Save',:tooltip=>'Save data'){|b| b.on('click') {f.submit}},
       button('Cancel',:tooltip=>'Cancel') {|b| b.on('click') {w.close}},
-      button('Scaffold',:tooltip=> 'See data with a traditional Rails scaffold') do |b|
+      button('Rails scaffold',:tooltip=> 'See data with a traditional Rails scaffold') do |b|
         b.on('click') {Rwt << "window.open('/contacts');"}
+      end,
+      button('Rwt scaffold',:tooltip=> 'See data with a Rwt scaffold') do |b|
+        b.on('click') {show_view('/contacts_rwt/index.js')}
       end
     ]
   end

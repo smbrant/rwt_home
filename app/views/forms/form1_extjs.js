@@ -43,16 +43,20 @@ var simple = new Ext.FormPanel({
         tooltip: 'Cancel',
         handler: function(){win.close()}
     },{
-        text: 'Scaffold',
+        text: 'Rails scaffold',
         tooltip: 'See data with a traditional Rails scaffold',
         handler: function(){window.open('/contacts')}
+    },{
+        text: 'Rwt scaffold',
+        tooltip: 'See data with a traditional Rails scaffold',
+        handler: function(){Rwt.getJs('/contacts_rwt')}
     }]
 });
 
 var win=new Ext.Window({
                 x:80,
                 title:'Simple Form - plain ExtJs javascript code',
-                width:360,
+                width:400,
                 y:80,
                 height:210,
                 items:simple

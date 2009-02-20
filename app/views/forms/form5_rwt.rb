@@ -17,20 +17,20 @@ window('... and forms can contain TabPanel(s) - rwt',612,450,:x=>80,:y=>80) do
       panel(:title=>'Personal Details',:layout=>'form',:defaults=>{:width=>230}) do
         field('first','First Name',:allowBlank=>false,:value=>'Jack')
         field('last','Last Name',:value=>'Slocum')
-#            },{
-#                fieldLabel: 'Company',
-#                name: 'company',
-#                value: 'Ext JS'
-#            }, {
-#                fieldLabel: 'Email',
-#                name: 'email',
-#                vtype:'email'
-
+        field('company','Company',:value=>'Ext JS')
+        field('email','Email',:vtype=>'email')
       end
       panel(:title=>'Phone Numbers',:layout=>'form',:defaults=>{:width=>230}) do
+        field('home','Home',:value=>'(888) 55-1212')
+        field('business','Business')
+        field('mobile','Mobile')
+        field('fax','Fax')
+      end
+      panel(:cls=>'x-plain',:title=>'Biography',:layout=>'fit') do
+        htmleditor(:fieldLable=>'Biography')
       end
     end
-#    f.buttons=[{:text=>'Save'},{:text=>'Cancel'}]
+    f.buttons=[{:text=>'Save'},{:text=>'Cancel'}]
   end
 end
 
