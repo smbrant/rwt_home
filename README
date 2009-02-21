@@ -8,9 +8,9 @@ How to create your rwt rails application
 ========================================
 
 - Create a new rails application.
-- Link of copy the rwt plugin to /vendor/plugins/rwt (got from
-  You can also install the plugin with
-    $ruby script/plugin install http://rwt.accesstecnologia.com.br/plugin/get/rwt
+- Link of copy the rwt plugin to /vendor/plugins/rwt (got from git://github.com/smbrant/rwt.git)
+  Alternatively, you can also install the plugin with
+    $ruby script/plugin install http://rwt.accesstecnologia.com.br/plugin/get/rwt/
 - Link of copy the extjs javascript library to /public/ext
    (get extjs from http://extjs.com) or use the task
    rwt:install_extjs to have a minimum version of extjs installed.
