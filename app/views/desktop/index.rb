@@ -9,6 +9,7 @@ rwt_app do
 #      menu_item('Basic CRUD',call_view('/rwt_contacts/index'))
 #      menu_item('Other tests',message('Other tests','To include other tests, alter the menu in /app/views/desktop/index.rb'))
 #      menu_item('Clear screen',function("location.href='/desktop/index_clean'"))
+      menu_item("User's Manual",function("window.open('http://docs.google.com/Doc?id=dpmc7mb_5cf3wkjfp')"))
     end
     menu('Tests') do
       menu_item('First window',call_view('/test/first'))
