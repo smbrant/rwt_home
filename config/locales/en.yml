@@ -1,5 +1,32 @@
-# Sample localization file for English. Add more files in this directory for other locales.
-# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
-
 en:
-  hello: "Hello world"
+  menu:
+    tests:
+      header: Tests
+      first_window: First window
+    home:
+      header: Rwt
+      what_is_this: What is this?
+      getting_started: Getting started
+      explore: Explore
+      users_manual: User's manual
+    rwt_examples: Rwt examples
+    ide:
+      header: IDE
+      activate: Activate
+      deactivate: Deactivate
+      clear: Clear
+    simple_tests:
+      header: Simple tests
+      simple_window: Simple window
+      inline_code: Inline code
+      users_manual: User's manual
+    forms:
+      header: Forms
+      dynamic_forms:
+        header: Dynamic forms
+        form1: Form1 - Very simple
+        form2: Form2 - Adding fieldsets
+        form3: Form3 - A little more complex
+        form4: Form4 - Forms can be a TabPanel...
+        form5: Form5 - ... and forms can contain TabPanel(s)
+

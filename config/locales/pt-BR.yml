@@ -1,0 +1,32 @@
+pt-BR:
+  menu:
+    tests:
+      header: Testes
+      first_window: Primeira janela
+    home:
+      header: Rwt
+      what_is_this: O que é isto?
+      getting_started: Primeiros passos
+      explore: Explorar
+      user_manual: Manual do usuário
+    rwt_examples: Exemplos rwt
+    ide:
+      header: IDE
+      activate: Ativar
+      deactivate: Desativar
+      clear: Limpar
+    simple_tests:
+      header: Testes simples
+      simple_window: Janela simples
+      inline_code: Código embutido
+      users_manual: Manual do usuário
+    forms:
+      header: Formulários
+      dynamic_forms:
+        header: Formulários dinâmicos
+        form1: Form1 - Bem simples
+        form2: Form2 - Adicionando fieldsets
+        form3: Form3 - Um pouco mais complexo
+        form4: Form4 - Um formulário pode ser um TabPanel...
+        form5: Form5 - ... e formulários podem conter TabPanel(s)
+

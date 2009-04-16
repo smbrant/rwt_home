@@ -1,35 +1,35 @@
 rwt_app do
   toolbar(:place=>'tb') do
-    text('<b>Rwt Examples:</b>')
-    menu('IDE') do
-      menu_item('Activate',call_view("/ide/activate"))
-      menu_item('De-activate',call_view("/ide/deactivate"))
-      menu_item('Clear',call_view("/ide/clear"))
+    text('<b>'+t(:'menu.rwt_examples')+'</b>')
+    menu(t(:'menu.ide.header')) do
+      menu_item(t(:'menu.ide.activate'),call_view("/ide/activate"))
+      menu_item(t(:'menu.ide.deactivate'),call_view("/ide/deactivate"))
+      menu_item(t(:'menu.ide.clear'),call_view("/ide/clear"))
     end
-    menu('Simple tests') do
-      menu_item('Simple window',call_view("/test/win_test"))
-      menu_item('Inline code',call_view("/test/inline_test"))
-      menu_item("User's Manual",function("window.open('http://docs.google.com/Doc?id=dpmc7mb_5cf3wkjfp')"))
+    menu(t(:'menu.simple_tests.header')) do
+      menu_item(t(:'menu.simple_tests.simple_window'),call_view("/test/win_test"))
+      menu_item(t(:'menu.simple_tests.inline_code'),call_view("/test/inline_test"))
+      menu_item(t(:'menu.simple_tests.users_manual'),function("window.open('http://docs.google.com/Doc?id=dpmc7mb_5cf3wkjfp')"))
     end
-    menu('Forms') do
-      menu('Dynamic Forms') do
-        menu('Form 1 - Very Simple') do
+    menu(t(:'menu.forms.header')) do
+      menu(t(:'menu.forms.dynamic_forms.header')) do
+        menu(t(:'menu.forms.dynamic_forms.form1')) do
           menu_item('extjs',call_view('/forms/form1_extjs'))
           menu_item('rwt',call_view('/forms/form1_rwt'))
         end
-        menu('Form 2 - Adding fieldsets') do
+        menu(t(:'menu.forms.dynamic_forms.form2')) do
           menu_item('extjs',call_view('/forms/form2_extjs'))
           menu_item('rwt',call_view('/forms/form2_rwt'))
         end
-        menu('Form 3 - A little more complex') do
+        menu(t(:'menu.forms.dynamic_forms.form3')) do
           menu_item('extjs',call_view('/forms/form3_extjs'))
           menu_item('rwt',call_view('/forms/form3_rwt'))
         end
-        menu('Form 4 - Forms can be a TabPanel...') do
+        menu(t(:'menu.forms.dynamic_forms.form4')) do
           menu_item('extjs',call_view('/forms/form4_extjs'))
           menu_item('rwt',call_view('/forms/form4_rwt'))
         end
-        menu('Form 5 - ... and forms can contain TabPanel(s)') do
+        menu(t(:'menu.forms.dynamic_forms.form5')) do
           menu_item('extjs',call_view('/forms/form5_extjs'))
           menu_item('rwt',call_view('/forms/form5_rwt'))
         end
