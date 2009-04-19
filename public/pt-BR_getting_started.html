@@ -20,22 +20,22 @@ and open the template in the editor.
   </tr>
   <tr>
     <td width="16%" valign="bottom">&nbsp;</td>
-    <td width="71%"><p><big class="style1"><big>Getting started with Rwt</big></big><br>
+    <td width="71%"><p><big class="style1"><big>Primeiros passos</big></big><br>
         <br>
-        Rwt creates an environment where it is very easy to develop a user interface based on the ExtJs javascript library and Rails.<br>
+        O Rwt cria um ambiente onde é muito fácil desenvolver uma interface visual baseada na biblioteca javascript ExtJs e no Rails.<br>
 <br>
-To start with, you should install the rwt plugin in a rails application:<br>
+Para começar, você deve instalar o plugin Rwt em uma aplicação Rails:<br>
 <br>
 $ cd my_app<br>
 $ ruby script/install http://rwt.accesstecnologia.com.br/plugin/get/rwt<br>
 <br>
-Now, download the extjs library from <a href="http://extjs.com" target="blank">http://extjs.com</a> and put it in a subdirectory named 'ext' in the public directory of your application (my_app/public/ext).</p>
+Agora, baixe a biblioteca ExtJs de <a href="http://extjs.com" target="blank">http://extjs.com</a> e coloque-a em um subdiretório com o nome 'ext' no diretório public de sua aplicação (my_app/public/ext).</p>
       <p>&nbsp;</p>
-      <p>We should have an action that creates one rwt application. You could create, for example, a controller called 'desktop'  with an 'index' action with the following code:</p>
+      <p>Nós devemos ter uma ação que crie uma aplicação Rwt. Você pode criar, por exemplo, um controlador chamado 'desktop' com uma ação 'index' com o seguinte código:</p>
       <p>&nbsp;</p>
       <code></code><pre>class DesktopController &lt; ApplicationController<br>  def index<br>    respond_to do |format|<br>      format.html<br>      format.js {rwt_render}<br>    end<br>  end<br>end</pre>
     <pre> </pre></code></td>
-    <td width="13%" align="center" valign="bottom"><a href="javascript:show_html('/getting_started1.html')">Next</a></td>
+    <td width="13%" align="center" valign="bottom"><a href="javascript:show_html('/pt-BR_getting_started1.html')">Avançar</a></td>
   </tr>
   <tr>
     <td>&nbsp;</td>

@@ -9,6 +9,7 @@ en:
       getting_started: Getting started
       explore: Explore
       users_manual: User's manual
+      install: How to install this application
     rwt_examples: Rwt examples
     ide:
       header: IDE
@@ -29,4 +30,6 @@ en:
         form3: Form3 - A little more complex
         form4: Form4 - Forms can be a TabPanel...
         form5: Form5 - ... and forms can contain TabPanel(s)
+  first_window: My first window
+  seems_easy: It seems to be easy
 

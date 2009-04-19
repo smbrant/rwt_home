@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+
+    <title></title><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+<!--
+.style1 {font-weight: bold}
+-->
+    </style>
+</head>
+<body>
+
+
+<table width="100%"  border="0">
+  <tr>
+    <td height="70">&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="16%" align="center" valign="bottom"><a href="javascript:show_html('/pt-BR_getting_started1.html')">Voltar</a></td>
+    <td width="71%"><p><big class="style1"><big>Primeiros passos</big></big><br>
+    </p>
+      <p>&nbsp;        </p>
+      <p>Agora que o nosso menu principal está criado, vamos cuidar de nossa primeira janela. Crie um controlador, digamos o test_controller.rb, com o seguinte código: <br>
+      </p>
+      <p>&nbsp;      </p>
+      <pre>class TestController &lt; ApplicationController<br>  def first<br>    rwt_render<br>  end<br>end<br>
+      </pre>
+e um arquivo chamado 'first.rb' no diretório the app/views/test com o código de uma janela simples: <br><br>
+<pre>window('Minha primeira janela',300,200) do<br>  button('Parece ser fácil') do |b|<br>    b.on('click') {show_view('/test/first')}<br>  end<br>end<br>
+</pre>
+
+Assim terminamos o nosso primeiro teste. Experimente o menu 'Testes/Primeira janela'. Você pode ter acesso a muitos outros exemplos através do menu 'Rwt/Explorar'.<br><br>
+O código fonte do Rwt é mantido em <a href="http://github.com/smbrant/rwt" target="blank">http://github.com/smbrant/rwt</a>.
+
+</td>
+    <td width="13%" align="center" valign="bottom">&nbsp;</td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+
+</body></html>

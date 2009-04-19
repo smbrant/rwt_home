@@ -18,13 +18,9 @@ class DesktopController < ApplicationController
   end
 
   def language
-    #TODO: change the language used
-    puts params[:id]
-    puts t('menu.tests')
+    # change the language used
     session[:language]=params[:id]
     I18n.locale=(params[:id])
-    puts t('menu.tests')
-#    rwt_ok
     redirect_to :action=> :index
   end
 end

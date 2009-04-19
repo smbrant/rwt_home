@@ -8,7 +8,8 @@ pt-BR:
       what_is_this: O que é isto?
       getting_started: Primeiros passos
       explore: Explorar
-      user_manual: Manual do usuário
+      users_manual: Manual do usuário
+      install: Como instalar esta aplicação
     rwt_examples: Exemplos rwt
     ide:
       header: IDE
@@ -29,4 +30,6 @@ pt-BR:
         form3: Form3 - Um pouco mais complexo
         form4: Form4 - Um formulário pode ser um TabPanel...
         form5: Form5 - ... e formulários podem conter TabPanel(s)
+  first_window: Minha primeira janela
+  seems_easy: Parece ser fácil
 
