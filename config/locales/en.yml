@@ -10,9 +10,8 @@ en:
       explore: Examples
       users_manual: User's manual
       install: How to install this application
-    rwt_examples: Rwt examples
     ide:
-      header: IDE
+      header: Code view
       activate: Activate
       deactivate: Deactivate
       clear: Clear
@@ -32,4 +31,6 @@ en:
         form5: Form5 - ... and forms can contain TabPanel(s)
   first_window: My first window
   seems_easy: It seems to be easy
-
+  title: Rwt - The Rails Web Toolkit
+  examples_title: Rwt examples
+  welcome: Welcome!

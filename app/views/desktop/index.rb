@@ -2,6 +2,8 @@ Rwt << "show_html= function(url){Ext.get('main').getUpdater().update({url:url})}
 
 rwt_app do
   toolbar(:place=>'tb') do
+    button('',:iconCls=>'US'){|b| b.on('click') {show_html('/desktop/language/en')}}
+    button('',:iconCls=>'BR'){|b| b.on('click') {show_html('/desktop/language/pt-BR')}}
     menu(t(:'menu.home.header')) do
       menu_item(t(:'menu.home.what_is_this'),function("Ext.get('main').getUpdater().update({url:'/#{I18n.locale}_what_is_this.html'})"))
       menu_item(t(:'menu.home.getting_started'),function("show_html('/#{I18n.locale}_getting_started.html')"))
@@ -14,7 +16,5 @@ rwt_app do
       #TODO: use the same pattern, instead of call_view
 #      menu_item('First window'){|m| m.on('click'){show_view('/test/first')}}
     end
-    button('',:iconCls=>'US'){|b| b.on('click') {show_html('/desktop/language/en')}}
-    button('',:iconCls=>'BR'){|b| b.on('click') {show_html('/desktop/language/pt-BR')}}
    end
 end

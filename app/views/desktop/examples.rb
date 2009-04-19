@@ -1,6 +1,7 @@
 rwt_app do
   toolbar(:place=>'tb') do
-    text('<b>'+t(:'menu.rwt_examples')+'</b>')
+    button('',:iconCls=>'US'){|b| b.on('click') {show_html('/desktop/language2/en')}}
+    button('',:iconCls=>'BR'){|b| b.on('click') {show_html('/desktop/language2/pt-BR')}}
     menu(t(:'menu.ide.header')) do
       menu_item(t(:'menu.ide.activate'),call_view("/ide/activate"))
       menu_item(t(:'menu.ide.deactivate'),call_view("/ide/deactivate"))
@@ -35,7 +36,6 @@ rwt_app do
         end
       end
     end
-
   end
 
   tabpanel( :renderTo=>'ide-main',
@@ -50,9 +50,9 @@ rwt_app do
             :plain=>true,
             :hidden=>true,
             :defaults=>{:autoScroll=>true},
-            :items=>[{:title=>'Welcome',
+            :items=>[{:title=>t(:'welcome'),
                 :closable=>true,
-                :autoLoad=>{:url=>'/introduction.html'}
+                :autoLoad=>{:url=>"/#{I18n.locale}_introduction.html"}
               }]
   )
 end

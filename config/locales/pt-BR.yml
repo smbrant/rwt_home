@@ -10,9 +10,8 @@ pt-BR:
       explore: Exemplos
       users_manual: Manual do usuário
       install: Como instalar esta aplicação
-    rwt_examples: Exemplos rwt
     ide:
-      header: IDE
+      header: Visualização de código
       activate: Ativar
       deactivate: Desativar
       clear: Limpar
@@ -32,4 +31,6 @@ pt-BR:
         form5: Form5 - ... e formulários podem conter TabPanel(s)
   first_window: Minha primeira janela
   seems_easy: Parece ser fácil
-
+  title: Rwt - Toolkit Rails para o desenvolvimento de aplicações web
+  examples_title: Exemplos Rwt
+  welcome: Bem-vindo!
