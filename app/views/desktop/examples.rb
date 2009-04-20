@@ -1,7 +1,7 @@
 rwt_app do
   toolbar(:place=>'tb') do
-    button('',:iconCls=>'US'){|b| b.on('click') {show_html('/desktop/language2/en')}}
-    button('',:iconCls=>'BR'){|b| b.on('click') {show_html('/desktop/language2/pt-BR')}}
+    button('',:iconCls=>'US'){|b| b.on('click') {show_html('/desktop/language_examples/en')}}
+    button('',:iconCls=>'BR'){|b| b.on('click') {show_html('/desktop/language_examples/pt-BR')}}
     menu(t(:'menu.ide.header')) do
       menu_item(t(:'menu.ide.activate'),call_view("/ide/activate"))
       menu_item(t(:'menu.ide.deactivate'),call_view("/ide/deactivate"))

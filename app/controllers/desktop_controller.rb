@@ -24,7 +24,7 @@ class DesktopController < ApplicationController
     redirect_to :action=> :index
   end
 
-  def language2
+  def language_examples
     session[:language]=params[:id]
     I18n.locale=(params[:id])
     redirect_to :action=> :examples
