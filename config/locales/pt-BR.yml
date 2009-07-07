@@ -29,6 +29,9 @@ pt-BR:
         form3: Form3 - Um pouco mais complexo
         form4: Form4 - Um formulário pode ser um TabPanel...
         form5: Form5 - ... e formulários podem conter TabPanel(s)
+      ajax_xml:
+        header: Ajax com formulários XML
+        form1: Formulário XML
   first_window: Minha primeira janela
   seems_easy: Parece ser fácil
   title: Rwt - Toolkit Rails para o desenvolvimento de aplicações web
