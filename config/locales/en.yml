@@ -29,6 +29,9 @@ en:
         form3: Form3 - A little more complex
         form4: Form4 - Forms can be a TabPanel...
         form5: Form5 - ... and forms can contain TabPanel(s)
+      ajax_xml:
+        header: Ajax with XML Forms
+        form1: XML Form
   first_window: My first window
   seems_easy: It seems to be easy
   title: Rwt - The Rails Web Toolkit
