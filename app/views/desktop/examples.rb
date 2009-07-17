@@ -13,12 +13,12 @@ rwt_app do
       menu_item(t(:'menu.simple_tests.users_manual'),function("window.open('http://docs.google.com/Doc?id=dpmc7mb_5cf3wkjfp')"))
     end
     menu(t(:'menu.forms.header')) do
-      menu(t(:'menu.forms.ajax_xml.header')) do
-        menu(t(:'menu.forms.ajax_xml.form1')) do
-          menu_item('extjs',call_view('/ajax_xml/form1_extjs'))
-          menu_item('rwt',call_view('/ajax_xml/form1_rwt'))
-        end
-      end
+#      menu(t(:'menu.forms.ajax_xml.header')) do
+#        menu(t(:'menu.forms.ajax_xml.form1')) do
+#          menu_item('extjs',call_view('/ajax_xml/form1_extjs'))
+#          menu_item('rwt',call_view('/ajax_xml/form1_rwt'))
+#        end
+#      end
       menu(t(:'menu.forms.dynamic_forms.header')) do
         menu(t(:'menu.forms.dynamic_forms.form1')) do
           menu_item('extjs',call_view('/forms/form1_extjs'))
