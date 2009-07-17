@@ -1,11 +1,15 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  name: MyString
-  city: MyString
+  first: MyString
+  last: MyString
+  company: MyString
   email: MyString
+  time: 2009-07-17 16:36:50
 
 two:
-  name: MyString
-  city: MyString
+  first: MyString
+  last: MyString
+  company: MyString
   email: MyString
+  time: 2009-07-17 16:36:50

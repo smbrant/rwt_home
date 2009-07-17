@@ -38,13 +38,17 @@ and open the template in the editor.
         <li>$ git clone git://github.com/smbrant/rwt.git</li>
         <li>$ cd ../..</li>
         <li>$ rake rwt:install_extjs</li>
+        <li>#edit config/environment.rb if running MySQL (defaults to Sqllite)</li>
+        <li>$ ruby db:create</li>
+        <li>$ ruby db:migrate</li>
         <li>$ ruby script/server</li>
         <li>Browse to <a href="http://localhost:3000/">http://localhost:3000</a></li>
       </ul>
       <br>
       <p><b>Pre-requisites</b></p>
       <ul>
-        <li>Rails 2.2.2 installed</li>
+        <li>Rails 2.3.2 installed</li>
+        <li>SqlLite (or MySQL)</li>
       </ul>
       </div>
       </td>

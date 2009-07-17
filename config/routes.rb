@@ -4,7 +4,7 @@ ActionController::Routing::Routes.draw do |map|
   map.root :controller => "desktop", :action=>'index'
 
   map.connect 'code/show/*path', :controller => 'code', :action => 'show'
-  
+
   map.connect 'plugin/get/*path', :controller => 'plugin', :action => 'get'
 
   map.connect ':controller/:action/:id'
