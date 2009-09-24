@@ -19,7 +19,7 @@ window('Simple Form - Rwt code',360,210) do |w|
         b.on('click') {Rwt << "window.open('/contacts');"}
       end,
       button('Rwt scaffold',:tooltip=> 'See data with a Rwt scaffold') do |b|
-        b.on('click') {show_view('/contacts_rwt')}
+        b.on('click') {show_view('/contacts.rwt')}
       end
     ]
   end

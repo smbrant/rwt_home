@@ -5,11 +5,17 @@ class ContactsController < ApplicationController
   # GET /contacts
   # GET /contacts.xml
   def index
-    @contacts = Contact.find(:all)
-
     respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @contacts }
+      format.html { @contacts = Contact.find(:all) }
+      format.xml  { render :xml => Contact.find(:all) }
+      format.rwt  { rwt_render }
+      format.json do
+        @pager = ::Paginator.new(Movie.count, 10) do |offset, per_page|
+          Movie.find(:all, :limit => per_page, :offset => offset)
+        end
+        @page = @pager.page(params[:page])
+        rwt_ok(:rows=>rwt_json(@page),:count=>@page.length)
+      end
     end
   end
 
