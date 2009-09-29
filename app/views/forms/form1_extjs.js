@@ -37,19 +37,27 @@ var simple = new Ext.FormPanel({
     buttons: [{
         text: 'Save',
         tooltip: 'Save data',
-        handler: function(){simple.form.submit()}
+        handler: function(){simple.form.submit()},
+        autoWidth:true,
+        width:'auto'
     },{
         text: 'Cancel',
         tooltip: 'Cancel',
-        handler: function(){win.close()}
+        handler: function(){win.close()},
+        autoWidth:true,
+        width:'auto'
     },{
         text: 'Rails scaffold',
         tooltip: 'See data with a traditional Rails scaffold',
-        handler: function(){window.open('/contacts')}
+        handler: function(){window.open('/contacts')},
+        autoWidth:true,
+        width:'auto'
     },{
         text: 'Rwt scaffold',
         tooltip: 'See data with a traditional Rails scaffold',
-        handler: function(){Rwt.getJs('/contacts_rwt')}
+        handler: function(){Rwt.getJs('/contacts_rwt')},
+        autoWidth:true,
+        width:'auto'
     }]
 });
 

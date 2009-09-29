@@ -1,7 +1,7 @@
 #
 # A simple form, coded in ruby, using the rwt library
 #
-window('Simple Form - Rwt code',360,210) do |w|
+window('Simple Form - Rwt code',400,210) do |w|
   form(:url=> '/contacts_rwt/create',
        :authenticity_token=>form_authenticity_token,
        :labelWidth=> 75,
@@ -20,7 +20,7 @@ window('Simple Form - Rwt code',360,210) do |w|
       end,
       button('Rwt scaffold',:tooltip=> 'See data with a Rwt scaffold') do |b|
         b.on('click') {show_view('/contacts.rwt')}
-      end
+      end,
     ]
   end
 end
