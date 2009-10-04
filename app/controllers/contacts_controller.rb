@@ -1,6 +1,3 @@
-#
-# A traditional crud controller (to compare with rwt_contacts_controller)
-#
 class ContactsController < ApplicationController
   # GET /contacts
   # GET /contacts.xml
@@ -10,11 +7,8 @@ class ContactsController < ApplicationController
       format.xml  { render :xml => Contact.find(:all) }
       format.rwt  { rwt_render }
       format.json do
-        @pager = ::Paginator.new(Movie.count, 10) do |offset, per_page|
-          Movie.find(:all, :limit => per_page, :offset => offset)
-        end
-        @page = @pager.page(params[:page])
-        rwt_ok(:rows=>rwt_json(@page),:count=>@page.length)
+        @page= Contact.find(:all, :limit => params[:limit], :offset => params[:start])
+        rwt_ok(:rows=>rwt_json(@page),:count=>Contact.count)
       end
     end
   end
