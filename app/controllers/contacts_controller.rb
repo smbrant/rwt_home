@@ -21,6 +21,7 @@ class ContactsController < ApplicationController
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @contact }
+      format.rwt { rwt_render }
     end
   end
 
@@ -32,12 +33,17 @@ class ContactsController < ApplicationController
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @contact }
+      format.rwt  { rwt_render }
     end
   end
 
   # GET /contacts/1/edit
   def edit
     @contact = Contact.find(params[:id])
+    respond_to do |format|
+      format.html
+      format.rwt { rwt_render }
+    end
   end
 
   # POST /contacts
