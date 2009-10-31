@@ -7,10 +7,13 @@ rwt_app do
       menu_item(t(:'menu.ide.deactivate'),call_view("/ide/deactivate"))
       menu_item(t(:'menu.ide.clear'),call_view("/ide/clear"))
     end
+    menu(t(:'menu.doc.header')) do
+      menu_item(t(:'menu.doc.users_manual'),function("window.open('http://docs.google.com/Doc?id=dpmc7mb_5cf3wkjfp')"))
+    end
     menu(t(:'menu.simple_tests.header')) do
       menu_item(t(:'menu.simple_tests.simple_window'),call_view("/test/win_test"))
       menu_item(t(:'menu.simple_tests.inline_code'),call_view("/test/inline_test"))
-      menu_item(t(:'menu.simple_tests.users_manual'),function("window.open('http://docs.google.com/Doc?id=dpmc7mb_5cf3wkjfp')"))
+      menu_item(t(:'menu.simple_tests.crud'),call_view("/contacts.rwt"))
     end
     menu(t(:'menu.forms.header')) do
 #      menu(t(:'menu.forms.ajax_xml.header')) do

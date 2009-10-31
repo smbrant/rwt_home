@@ -7,8 +7,8 @@ module ApplicationHelper
       Rwt << "n=a.items.length;"
       Rwt << "rs=a.items;"
       Rwt << "found=false;"
-      Rwt << "for(i=0;i<n;++i) {if(rs.items[i].title=='#{title}'){found=true}};"
-      Rwt << "if(!found){Ext.getCmp('ide').add({title:'#{title}',closable:true,autoLoad:{url:'/code/show/#{code}'}}).show();}"
+      Rwt << "for(i=0;i<n;++i) {if(rs.items[i].code=='#{code}'){found=true}};"
+      Rwt << "if(!found){Ext.getCmp('ide').add({title:'#{title}',code:'#{code}',closable:true,autoLoad:{url:'/code/show/#{code}'}}).show();}"
     end
   end
 end

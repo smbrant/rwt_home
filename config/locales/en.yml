@@ -15,11 +15,13 @@ en:
       activate: Activate
       deactivate: Deactivate
       clear: Clear
+    doc:
+      header: Documentation
+      users_manual: User's manual
     simple_tests:
       header: Simple tests
       simple_window: Simple window
       inline_code: Inline code
-      users_manual: User's manual
     forms:
       header: Forms
       dynamic_forms:

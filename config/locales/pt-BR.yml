@@ -15,11 +15,13 @@ pt-BR:
       activate: Ativar
       deactivate: Desativar
       clear: Limpar
+    doc:
+      header: Documentação
+      users_manual: Manual do usuário
     simple_tests:
       header: Testes simples
       simple_window: Janela simples
       inline_code: Código embutido
-      users_manual: Manual do usuário
     forms:
       header: Formulários
       dynamic_forms:

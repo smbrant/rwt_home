@@ -8,5 +8,7 @@ window('Contacts',700,350) do
   end
 end
 
+show_code('app/controllers/desktop_controller.rb')
+show_code('app/views/desktop/index.rb')
 show_code('app/controllers/contacts_controller.rb')
 show_code('app/views/contacts/index.rb')
