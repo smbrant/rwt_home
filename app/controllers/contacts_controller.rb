@@ -56,9 +56,11 @@ class ContactsController < ApplicationController
         flash[:notice] = 'Contact was successfully created.'
         format.html { redirect_to(@contact) }
         format.xml  { render :xml => @contact, :status => :created, :location => @contact }
+        format.rwt  { rwt_ok }
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @contact.errors, :status => :unprocessable_entity }
+        format.rwt  { rwt_err_messages(@contact) }
       end
     end
   end
@@ -73,9 +75,11 @@ class ContactsController < ApplicationController
         flash[:notice] = 'Contact was successfully updated.'
         format.html { redirect_to(@contact) }
         format.xml  { head :ok }
+        format.rwt  { rwt_ok }
       else
         format.html { render :action => "edit" }
         format.xml  { render :xml => @contact.errors, :status => :unprocessable_entity }
+        format.rwt  { rwt_err_messages(@contact) }
       end
     end
   end
@@ -89,6 +93,7 @@ class ContactsController < ApplicationController
     respond_to do |format|
       format.html { redirect_to(contacts_url) }
       format.xml  { head :ok }
+      format.rwt  { rwt_ok }
     end
   end
 end

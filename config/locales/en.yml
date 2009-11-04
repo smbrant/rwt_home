@@ -22,6 +22,7 @@ en:
       header: Simple tests
       simple_window: Simple window
       inline_code: Inline code
+      crud: Simple CRUD
     forms:
       header: Forms
       dynamic_forms:

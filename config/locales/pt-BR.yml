@@ -22,6 +22,7 @@ pt-BR:
       header: Testes simples
       simple_window: Janela simples
       inline_code: Código embutido
+      crud: Um CRUD simples
     forms:
       header: Formulários
       dynamic_forms:

@@ -1,5 +1,5 @@
 window('New Contact',500,250) do
-  editform(@contact,ContactsRwtController,form_authenticity_token) do
+  editform(@contact,ContactsController,form_authenticity_token) do
     field('first')
     field('last')
     field('company')
